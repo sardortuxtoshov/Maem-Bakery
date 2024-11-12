@@ -32,8 +32,10 @@ export default function Header() {
 
             {/* Menu items */}
             <div
-                className={`flex-col md:flex-row md:items-center md:space-x-8 text-gray-800 font-medium absolute md:static  w-full md:w-auto left-0 top-20 md:top-0 md:flex ${
-                    isOpen ? "flex" : "hidden"
+                className={`flex-col   md:flex-row md:items-center md:space-x-8 text-gray-800 font-medium absolute md:static md:w-auto left-0 top-20 md:top-0 md:flex ${
+                    isOpen
+                        ? "flex border bg-zinc-100 shadow-sm w-[80%] items-center"
+                        : "hidden "
                 } transition-all duration-300`}
             >
                 <Link
